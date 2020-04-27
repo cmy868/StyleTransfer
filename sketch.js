@@ -98,7 +98,7 @@ function draw(){
   else
   { 
     style = null;
-    image(video, 0, 0);
+    image(video, 1280, 720);
     // resultImg.hide();
     let d = dist(noseX, noseY, eyelX, eyelY);
     image(img, noseX+d/2, noseY-d, d/2);
