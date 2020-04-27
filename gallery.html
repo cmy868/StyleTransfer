@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* gallery */
+      *{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+.gallery-section{
+  width: 100%;
+  padding: 60px 0;
+  background: #f1f1f1;
+}
+
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.gallery-section h1{
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.border{
+  width: 180px;
+  height: 4px;
+  background: #333;
+  margin: 60px auto;
+}
+
+.gallery-section .gallery{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.gallery-section .image{
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 2%;
+}
+
+.gallery-section .image img{
+  width: 100%;
+  transition: 0.4s;
+}
+
+.gallery-section .image:hover img{
+  transform: scale(1.4) rotate(15deg);
+}
+
+a{
+  text-decoration: none;
+}
+
+@media screen and (max-width:960px) {
+  .gallery-section .image{
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .gallery-section .image{
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .gallery-section .image{
+    flex: 100%;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+
+    <div class="gallery-section">
+      <div class="inner-width">
+        <div class="gallery">
+          <a href="images/glass.png" class="image">
+            <img src="images/glass.png" alt="">
+          </a>
+
+          <a href="images/new.jpg" class="image">
+            <img src="images/new.jpg" alt="">
+          </a>
+
+          <a href="images/sandglass.jpg" class="image">
+            <img src="images/sandglass.jpg" alt="">
+          </a>
+
+          <a href="images/flower.jpg" class="image">
+            <img src="images/flower.jpg" alt="">
+          </a>
+
+          <a href="images/pic1.jpg" class="image">
+            <img src="images/pic1.jpg" alt="">
+          </a>
+
+          <a href="images/pic2.png" class="image">
+            <img src="images/pic2.png" alt="">
+          </a>
+
+        </div>
+        <a href="index.html"><h1>Back to Live Style</h1></a>
+        <div class="border"></div>
+      </div>
+    </div>
+
+
+  <script>
+    $(".gallery").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{
+        enabled: true
+      }
+    });
+  </script>
+
+  </body>
+</html>

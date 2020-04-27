@@ -1,0 +1,59 @@
+<!--
+  Copyright (c) 2018 ml5
+  
+  This software is released under the MIT License.
+  https://opensource.org/licenses/MIT
+-->
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script> 
+  <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Muli:wght@500&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+
+<script src="sketch.js"></script>
+
+<body>
+  <div id="whole">
+  <div id="canvasContainer"></div>
+  <div id="imgBar">
+    <ul>
+      <li>
+        <p id='status'>Loading model...</p>
+      </li>
+      <li>
+    <img class="item" id="card" src="images/pic1.jpg" onclick="updateStyleImg(this);changeBG('#fcc101');" />
+  </li>
+  <li>
+    <img class="item" id="pic6" src="images/new.jpg" onclick="updateStyleImg(this);changeBG('#4d4766');" />
+  </li>
+  <li>
+    <img class="item"id="pic4" src="images/flower.jpg" onclick="updateStyleImg(this);changeBG('#414b34');" />
+  </li>
+  <li>
+    <img class="item"id="glass" src="images/glass.png" onclick="start();changeBG('#8aaf88');" />
+  </li>
+  </ul>
+  </div>
+  <div id="navBar">
+
+    <ul>
+      <li class="nav"><img src="images/logo.png"></li>
+      <li class="nav"><a href="=#">Info</a></li>
+      <li class="nav"><a href="gallery.html">Gallery</a></li>
+      <li class="nav"><a href="#">Contact</a></li>
+      <li class="nav" id="shot" onclick="saveCanvas();"><a href="#">Save Image</a></li>
+    </ul>
+ 
+</div>
+</div>
+</body>
+
+</html>
