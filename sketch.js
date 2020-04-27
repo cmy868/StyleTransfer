@@ -101,7 +101,7 @@ function draw(){
     image(video, 0, 0);
     // resultImg.hide();
     let d = dist(noseX, noseY, eyelX, eyelY);
-    image(img, noseX+d/2, noseY-d, d/2);
+    image(img, noseX+d/2, noseY-d/2, d, d);
     //fill(255, 0, 0);
     //ellipse(noseX, noseY, d);
   }
@@ -131,7 +131,7 @@ function keyPressed()
 
 function start()
 {
-  resizeCanvas(1280,720);
+  resizeCanvas(640, 480);
   poseNet = ml5.poseNet(video, modelReady2);
   poseNet.on('pose', gotPoses);
   AI = true;
