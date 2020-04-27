@@ -1,0 +1,83 @@
+img {
+  display: inline;
+}
+#canvasContainer {
+  justify-self: center;
+  grid-area: can;
+}
+
+*{
+  padding:0px;
+  margin:0px;
+  max-width: 100%;
+  font-family: 'Muli', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Manrope', sans-serif;
+  overflow: hidden;
+}
+body{
+  background-color: #414b34;
+}
+#navBar{
+  grid-area: nav;
+  justify-self: center;
+  display:flex;
+  flex-flow: flex-direction;
+  justify-content:center;
+  align-items:center;
+  max-width: 70%;
+}
+#whole{
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "img can nav";
+}
+
+#imgBar{
+  grid-area: img;
+  justify-self: center;
+  display:flex;
+  flex-flow: flex-direction;
+  justify-content:center;
+  align-items:center;
+}
+
+#status{
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  font-size: 3vh;
+  color:#FFF;
+}
+
+.item{
+  order:4;
+  flex-grow:1;
+  max-width: 30%;
+  padding-left: 25%;
+  padding-right: 25%;
+  cursor: pointer;
+}
+
+ul{
+  list-style-type:none;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+.nav{
+  order:4;
+  flex-grow:1;
+  font-size: 2.8vh;
+  padding-bottom: 18%;
+}
+
+#shot{
+  padding-top: 20%;
+}
